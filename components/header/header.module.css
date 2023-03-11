@@ -1,0 +1,25 @@
+.title{
+  left: 22.5vw;
+  z-index: 12;
+  padding: 1vw;
+  position: relative;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-display: center;
+  text-decoration: none;
+  color: black; 
+  text-decoration: none;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+.headeritem{
+  margin-top: 3ch;
+  margin-left: 10vw;
+  text-decoration: none;
+  color: black;
+}

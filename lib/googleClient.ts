@@ -9,7 +9,18 @@ const storage = new Storage();
 
 export default async function listFilesPaginated() {
   const bucket = storage.bucket(bucketName);
-  const [files, queryForPage2] = await bucket.getFiles({autoPaginate: false});
+
+  const prefix = 'drive-download-20230125T210358Z-001/';
+
+  const options = {
+    prefix: prefix,
+    autoPaginate: false,
+  };
+
+  const [files, queryForPage2] = await bucket.getFiles(options);
+
+
+
 
   console.log('Files:');
   files.forEach(file => {

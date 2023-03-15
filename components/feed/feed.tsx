@@ -1,6 +1,13 @@
+import listFilesPaginated from "@/lib/googleClient";
 import React from "react";
 
 export default function Feed(){
+
+  //todo: fetch source urls and metadata from google cloud storage
+
+  listFilesPaginated(); 
+
+  //render that content 
 
   return(
     <>
